@@ -16,3 +16,5 @@ Jupyter notebook that expands on combine_ghost_spec.ipynb to read in multiple sp
 ## specnormrv_example.ipynb
 
 A Jupyter notebook that can be used to 1) calculate RVs from cross-correlation with a template spectrum (one metal-poor template is provided in this repo) and shift the input spectrum to an RV of 0, 2) calculate the barycentric RV correction and apply it to the measured RVs, 3) perform a fine normalization using the input template spectrum to identify continuum points in the input spectrum, and 4) combine the spectra from GHOST's red and blue cameras.
+
+Note that this has dependencies on hayescr/turbospec_wrapper, hayescr/apo_tools, and sdss/apogee (which has a packaged version of dnidever/Doppler and the necessary dependencies for that code, which is used for RV cross-correlation)
